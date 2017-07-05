@@ -19,11 +19,7 @@ window.onload = function() {
         contentText.innerHTML = (contentText.innerHTML === "Basic") ? "Tizen" : "Basic";
     });
     
-    var btn = document.createElement (('v' == '\v') ? '<input name="myName">' : 'input'); btn.name = 'myName';
-    btn.type = 'button'; 
-    btn.id = 'myUniqueID';
-    btn.value = 'Дави!'; 
-   
-    document.getElementById ('myPlace').appendChild (btn);
-    document.getElementById ('myElem').parentNode.insertBefore (btn, document.getElementById ('myElem'));
+    document.getElementById('button').onclick = function() {
+        alert('Клик')
+   }
 };

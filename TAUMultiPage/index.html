@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	<title>Tizen Web IDE - Template - Tizen - Tizen Web UI Framework - Multi Page</title>
+</head>
+
+<body>
+	<!-- Start of first page: #one -->
+	<div class="ui-page" id="one">
+		<div class="ui-header">
+			<h1>TIZEN LEESON 2</h1>
+		</div><!-- /header -->
+           
+		<div class="ui-content">
+			<h2>One</h2>
+			 <input type="button" id="button" value = "click on me"/>
+			
+		<ul class="ui-listview">
+			 <li class="ui-group-index">Show internal pages:</li>
+				 <li class="ui-li-anchor"><a href="#popup" data-rel="popup" data-position-to="window">Show page "popup"</a></li>
+				 <li class="ui-li-anchor"><a href="#two">Show page "two"</a></li>
+				 <li class="ui-li-anchor"><a href="#three">Show page "three"</a></li>
+				 <li class="ui-li-anchor"><a href="#four">Show page "four"</a></li>
+				  <li class="ui-li-anchor"><a href="#five">Show page "five"</a></li>
+			</ul>
+			<div id="popup" class="ui-popup center_title_1btn">
+				<div class="ui-popup-header">Popup title</div>
+				<div class="ui-popup-content popup-content-padding">Pop-up dialog box, a child window that blocks user interact to the parent windows</div>
+				<div class="ui-popup-footer">
+					<a class="ui-btn ui-inline" data-rel="back">Button</a>
+		</div>
+			</div>
+		</div><!-- /content -->
+	</div><!-- /page one -->
+
+
+	<!-- Start of second page: #two -->
+	<div class="ui-page" id="two">
+		<div class="ui-header">
+			<h1>Two</h1>
+		</div><!-- /header -->
+
+		<div class="ui-content">
+			<h2>Two</h2>
+         <div id = "ex_l">
+			<p>I have an id of "two" on my page container. I'm the second
+				page container in this multi-page template.</p> </div>
+			<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
+			
+		</div><!-- /content -->
+	</div><!-- /page two -->
+
+<!-- Start of third page: #three -->
+	<div class="ui-page" id="three">
+		<div class="ui-header">
+			<h1>Three</h1>
+		</div><!-- /header -->
+
+		<div class="ui-content">
+			<h2>Three</h2>
+           
+		<!--  	<p>VIDEO 1 - YouTube </p>
+			<div style='height:100px; width:260px'>
+            <iframe width="260" height="100" src="https://www.youtube.com/embed/DeAw6aXHzcY" ></iframe>
+            </div>
+            -->
+           	<p>VIDEO 2 - local
+           	<video width="360" height="200" src="/home/student/Рабочий стол/_TouchCube.mp4" controls></video>
+           	</p>
+			<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
+			
+		</div>
+	</div>
+<!-- Start of third page: #four -->
+	<div class="ui-page" id="four">
+		<div class="ui-header">
+			<h1>Four</h1>
+		</div><!-- /header -->
+
+		<div class="ui-content">
+           <canvas id='draw' width='240' height='180' style='border:1px solid;'></canvas> 
+		
+		</div>
+	</div>
+	
+<!-- Start of fifth page: #five -->
+	<div class="ui-page" id="five">
+		<div class="ui-header">
+			<h1>Five</h1>
+		</div><!-- /header -->
+
+		<div class="ch-wrap"></div>
+		
+	</div>
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+	<script type="text/javascript"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
